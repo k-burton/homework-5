@@ -1,3 +1,5 @@
+// Your document ready function should start here and wrap pretty much all of your js.
+
 
 /////////////////////////////////
 
@@ -7,6 +9,7 @@ $('form').submit(function(event){
   event.preventDefault();
   var cityName = $('#city-type').val();
   console.log("city name test");
+  // I would try to stay consistent because you're not standardizing your inputs so nyc is not the same as NYC and for the other cities, you use the uppercase versions
 if(cityName === "nyc" || cityName === "New York" || cityName === "New York City"){
   console.log("NYC!!");
   $('body').removeClass().addClass('nyc');
